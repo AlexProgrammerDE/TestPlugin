@@ -1,3 +1,4 @@
-name:
-main:
-version:
+name: TestPlugin
+main: me.alexprogrammerde.testplugin.main
+version: 1.0
+author: AlexProgrammerDE
