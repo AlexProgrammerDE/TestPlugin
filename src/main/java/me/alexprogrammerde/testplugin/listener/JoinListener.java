@@ -21,6 +21,8 @@ import static org.bukkit.Material.*;
 
 public class JoinListener implements Listener {
 
+
+
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
@@ -47,9 +49,13 @@ public class JoinListener implements Listener {
         inv.setItem(25, red_torch);
 
         inv.setHeldItemSlot(4);
+        Bukkit.getScheduler().scheduleSyncRepeatingTask(main.getPlugin(), new Runnable() {
 
-        player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder("§ktext §r§lYou can expand the menu with sneaking! §ktext").create());
+            @Override
+            public void run() {
+                player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder("§ktext §r§lYou can expand the menu with sneaking! §ktext").create());
+            }
 
-
+            }, 0, 20 );
     }
 }

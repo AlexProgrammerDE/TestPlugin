@@ -4,9 +4,12 @@ import me.alexprogrammerde.testplugin.listener.InventoryListener;
 import me.alexprogrammerde.testplugin.listener.JoinListener;
 import me.alexprogrammerde.testplugin.listener.SneakListener;
 import me.alexprogrammerde.testplugin.utils.SettingsManager;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Server;
+import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -14,23 +17,26 @@ import java.io.File;
 public class main extends JavaPlugin {
     private File customConfigFile;
     private FileConfiguration customConfig;
-    public Server server = getServer();
-    public JavaPlugin plugin = this;
+    public ConsoleCommandSender logger = getServer().getConsoleSender();
+
+    PluginManager manager = getServer().getPluginManager();
+    private static main plugin;
 
     @Override
     public void onEnable() {
-        server.getConsoleSender().sendMessage(ChatColor.GREEN + "[TestPlugin] Loading Config");
+        plugin = this;
+        logger.sendMessage(ChatColor.GREEN + "[TestPlugin] Loading Config");
 
         SettingsManager.setup(this, "config.yml");
         SettingsManager.getConfig().addDefault("Default", "Default");
         SettingsManager.getConfig().options().copyDefaults(true);
         SettingsManager.saveConfig();
 
-        server.getConsoleSender().sendMessage(ChatColor.GREEN + "[TestPlugin] Registering Listeners");
+        logger.sendMessage(ChatColor.GREEN + "[TestPlugin] Registering Listeners");
 
-        getServer().getPluginManager().registerEvents(new SneakListener(), this);
-        getServer().getPluginManager().registerEvents(new JoinListener(), this);
-        getServer().getPluginManager().registerEvents(new InventoryListener(), this);
+        manager.registerEvents(new SneakListener(), this);
+        manager.registerEvents(new JoinListener(), this);
+        manager.registerEvents(new InventoryListener(), this);
     }
 
     @Override
@@ -38,4 +44,7 @@ public class main extends JavaPlugin {
         getLogger().info("onDisable is called!");
     }
 
+    public static main getPlugin() {
+        return plugin;
+    }
 }

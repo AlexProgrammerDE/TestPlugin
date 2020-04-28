@@ -1,0 +1,7 @@
+name: TestPlugin
+main: me.alexprogrammerde.testplugin.main
+version: 1.0
+author: AlexProgrammerDE
+api-version: 1.15
+
+softdepend: [PlaceholderAPI]

@@ -1,0 +1,7 @@
+me\alexprogrammerde\testplugin\main.class
+me\alexprogrammerde\testplugin\listener\InventoryListener.class
+me\alexprogrammerde\testplugin\listener\SneakListener.class
+me\alexprogrammerde\testplugin\utils\GUIHandler.class
+me\alexprogrammerde\testplugin\listener\JoinListener.class
+me\alexprogrammerde\testplugin\listener\JoinListener$1.class
+me\alexprogrammerde\testplugin\utils\SettingsManager.class
