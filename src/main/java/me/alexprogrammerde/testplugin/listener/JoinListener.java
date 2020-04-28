@@ -10,22 +10,24 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
-import org.bukkit.plugin.Plugin;
-import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.scheduler.BukkitScheduler;
-import org.bukkit.scheduler.BukkitTask;
-import me.alexprogrammerde.testplugin.main;
+
+import java.util.ArrayList;
 
 import static org.bukkit.Material.*;
 
 public class JoinListener implements Listener {
 
-
+    ArrayList playerList = new ArrayList<>();
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
+
         Player player = event.getPlayer();
+
+        if(!playerList.contains(player.getUniqueId())) {
+            playerList.add(player.getUniqueId());
+        }
+
         PlayerInventory inv = player.getInventory();
 
         ItemStack compass = new ItemStack(COMPASS);
@@ -49,13 +51,33 @@ public class JoinListener implements Listener {
         inv.setItem(25, red_torch);
 
         inv.setHeldItemSlot(4);
-        Bukkit.getScheduler().scheduleSyncRepeatingTask(main.getPlugin(), new Runnable() {
+        int TaskID;
+        TaskID = Bukkit.getScheduler().scheduleSyncRepeatingTask(main.getPlugin(), new Runnable() {
+            int Message = 1;
 
             @Override
             public void run() {
-                player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder("§ktext §r§lYou can expand the menu with sneaking! §ktext").create());
+                switch(Message){
+                    case 1:
+                        player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder("§ktext §r§lYou can expand the menu with sneaking! §ktext").create());
+                        Message++;
+                        break;
+                    case 2:
+                        player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder("§ktext §r§lYou can expand the menu with sneaking! §ktext").create());
+                        Message++;
+                    case 3:
+                        player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder("§ktext §r§lWelcome! §ktext").create());
+                        Message++;
+                        break;
+                    case 4:
+                        player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder("§ktext §r§lWelcome! §ktext").create());
+                        Message = 1;
+                        break;
+
+                }
+
             }
 
-            }, 0, 20 );
+            }, 0, 60 );
     }
 }

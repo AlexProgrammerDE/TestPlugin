@@ -20,22 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8a4a899-20f1-4649-b3ef-72b2f9b5d298" name="Default Changelist" comment="Add files">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_21_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_md_5_bungeecord_chat_1_15_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_15_2_R0_1_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/alexprogrammerde/testplugin/listener/JoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/alexprogrammerde/testplugin/listener/JoinListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/alexprogrammerde/testplugin/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/alexprogrammerde/testplugin/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/alexprogrammerde/testplugin/listener/JoinListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/alexprogrammerde/testplugin/listener/JoinListener$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/alexprogrammerde/testplugin/listener/JoinListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/alexprogrammerde/testplugin/listener/JoinListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/alexprogrammerde/testplugin/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/alexprogrammerde/testplugin/main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588075579256</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add files">
+      <created>1588079665168</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588079665168</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,30 +115,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="838" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588075453880" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1588079065610">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1588081761359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588079065610" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1588079065610">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588081761359" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1588081761359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588079065610" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1588079065610">
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588081761359" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1588081761359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588079065610" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1588079065610">
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588081761359" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1588081761359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588079065610" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588081761359" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1587813566761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587813566761" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1588075596290">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1588079677497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588075596290" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588079677497" />
     <state x="342" y="140" key="new project wizard" timestamp="1587750098175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
